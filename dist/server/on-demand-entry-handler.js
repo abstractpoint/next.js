@@ -181,7 +181,7 @@ function onDemandEntryHandler(devMiddleware, compiler, _ref) {
     },
     middleware: function middleware() {
       return function (req, res, next) {
-        if (!/^\/_next\/on-demand-entries-ping/.test(req.url)) return next();
+        if (!/^\/next\/on-demand-entries-ping/.test(req.url)) return next();
 
         var _parse = (0, _url.parse)(req.url, true),
             query = _parse.query;

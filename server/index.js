@@ -91,31 +91,31 @@ export default class Server {
         await this.serveStatic(req, res, p)
       },
 
-      '/_next/:hash/manifest.js': async (req, res, params) => {
+      '/next/:hash/manifest.js': async (req, res, params) => {
         this.handleBuildHash('manifest.js', params.hash, res)
         const p = join(this.dir, `${this.dist}/manifest.js`)
         await this.serveStatic(req, res, p)
       },
 
-      '/_next/:hash/main.js': async (req, res, params) => {
+      '/next/:hash/main.js': async (req, res, params) => {
         this.handleBuildHash('main.js', params.hash, res)
         const p = join(this.dir, `${this.dist}/main.js`)
         await this.serveStatic(req, res, p)
       },
 
-      '/_next/:hash/commons.js': async (req, res, params) => {
+      '/next/:hash/commons.js': async (req, res, params) => {
         this.handleBuildHash('commons.js', params.hash, res)
         const p = join(this.dir, `${this.dist}/commons.js`)
         await this.serveStatic(req, res, p)
       },
 
-      '/_next/:hash/app.js': async (req, res, params) => {
+      '/next/:hash/app.js': async (req, res, params) => {
         this.handleBuildHash('app.js', params.hash, res)
         const p = join(this.dir, `${this.dist}/app.js`)
         await this.serveStatic(req, res, p)
       },
 
-      '/_next/:buildId/pages/:path*': async (req, res, params) => {
+      '/next/:buildId/pages/:path*': async (req, res, params) => {
         if (!this.handleBuildId(params.buildId, res)) {
           res.setHeader('Content-Type', 'application/json')
           res.end(JSON.stringify({ buildIdMismatch: true }))
@@ -128,7 +128,7 @@ export default class Server {
         await this.renderJSON(req, res, pathname)
       },
 
-      '/_next/:path+': async (req, res, params) => {
+      '/next/:path+': async (req, res, params) => {
         const p = join(__dirname, '..', 'client', ...(params.path || []))
         await this.serveStatic(req, res, p)
       },

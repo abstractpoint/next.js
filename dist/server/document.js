@@ -167,7 +167,7 @@ var NextScript = exports.NextScript = function (_Component4) {
 
       return _react2.default.createElement('script', (0, _extends3.default)({
         type: 'text/javascript',
-        src: '/_next/' + hash + '/' + filename
+        src: '/next/' + hash + '/' + filename
       }, additionalProps));
     }
   }, {

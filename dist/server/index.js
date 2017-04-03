@@ -241,7 +241,7 @@ var Server = function () {
           };
         }(),
 
-        '/_next/:hash/manifest.js': function () {
+        '/next/:hash/manifest.js': function () {
           var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(req, res, params) {
             var p;
             return _regenerator2.default.wrap(function _callee4$(_context4) {
@@ -261,12 +261,12 @@ var Server = function () {
             }, _callee4, _this3);
           }));
 
-          return function _nextHashManifestJs(_x5, _x6, _x7) {
+          return function nextHashManifestJs(_x5, _x6, _x7) {
             return _ref5.apply(this, arguments);
           };
         }(),
 
-        '/_next/:hash/main.js': function () {
+        '/next/:hash/main.js': function () {
           var _ref6 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(req, res, params) {
             var p;
             return _regenerator2.default.wrap(function _callee5$(_context5) {
@@ -286,12 +286,12 @@ var Server = function () {
             }, _callee5, _this3);
           }));
 
-          return function _nextHashMainJs(_x8, _x9, _x10) {
+          return function nextHashMainJs(_x8, _x9, _x10) {
             return _ref6.apply(this, arguments);
           };
         }(),
 
-        '/_next/:hash/commons.js': function () {
+        '/next/:hash/commons.js': function () {
           var _ref7 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6(req, res, params) {
             var p;
             return _regenerator2.default.wrap(function _callee6$(_context6) {
@@ -311,12 +311,12 @@ var Server = function () {
             }, _callee6, _this3);
           }));
 
-          return function _nextHashCommonsJs(_x11, _x12, _x13) {
+          return function nextHashCommonsJs(_x11, _x12, _x13) {
             return _ref7.apply(this, arguments);
           };
         }(),
 
-        '/_next/:hash/app.js': function () {
+        '/next/:hash/app.js': function () {
           var _ref8 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee7(req, res, params) {
             var p;
             return _regenerator2.default.wrap(function _callee7$(_context7) {
@@ -336,12 +336,12 @@ var Server = function () {
             }, _callee7, _this3);
           }));
 
-          return function _nextHashAppJs(_x14, _x15, _x16) {
+          return function nextHashAppJs(_x14, _x15, _x16) {
             return _ref8.apply(this, arguments);
           };
         }(),
 
-        '/_next/:buildId/pages/:path*': function () {
+        '/next/:buildId/pages/:path*': function () {
           var _ref9 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee8(req, res, params) {
             var paths, pathname;
             return _regenerator2.default.wrap(function _callee8$(_context8) {
@@ -371,12 +371,12 @@ var Server = function () {
             }, _callee8, _this3);
           }));
 
-          return function _nextBuildIdPagesPath(_x17, _x18, _x19) {
+          return function nextBuildIdPagesPath(_x17, _x18, _x19) {
             return _ref9.apply(this, arguments);
           };
         }(),
 
-        '/_next/:path+': function () {
+        '/next/:path+': function () {
           var _ref10 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee9(req, res, params) {
             var p;
             return _regenerator2.default.wrap(function _callee9$(_context9) {
@@ -395,7 +395,7 @@ var Server = function () {
             }, _callee9, _this3);
           }));
 
-          return function _nextPath(_x20, _x21, _x22) {
+          return function nextPath(_x20, _x21, _x22) {
             return _ref10.apply(this, arguments);
           };
         }(),

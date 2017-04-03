@@ -67,7 +67,7 @@ export class NextScript extends Component {
     return (
       <script
         type='text/javascript'
-        src={`/_next/${hash}/${filename}`}
+        src={`/next/${hash}/${filename}`}
         {...additionalProps}
       />
     )

@@ -20,7 +20,7 @@ var ping = function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            url = '/_next/on-demand-entries-ping?page=' + _router2.default.pathname;
+            url = '/next/on-demand-entries-ping?page=' + _router2.default.pathname;
             _context.next = 4;
             return (0, _unfetch2.default)(url);
 
